@@ -188,5 +188,52 @@
             </div>
             <div id="footer"></div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close">
+                    <i class="ti-close"></i>
+                </div>
+
+                <header class="modal-header">
+                    <i class="modal-heading-icon ti-bag"></i>
+                    Tickets
+                </header>
+
+                <div class="modal-content">
+                    <label for="ticket-quantity" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input
+                        id="ticket-quantity"
+                        type="text"
+                        class="modal-input"
+                        placeholder="How many?"
+                    />
+
+                    <label for="ticket-email" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send to
+                    </label>
+                    <input
+                        id="ticket-email"
+                        type="text"
+                        class="modal-input"
+                        placeholder="Enter email"
+                    />
+
+                    <button id="modal-buy-tickets">
+                        Pay
+                        <i class="ti-check"></i>
+                    </button>
+                </div>
+
+                <footer class="modal-footer">
+                    <p class="modal-help">Need <a href="">help?</a></p>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>

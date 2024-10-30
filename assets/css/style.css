@@ -279,7 +279,102 @@ html {
     color: #000;
     background-color: #ccc;
 }
+
 /* Footer section */
 
 #footer {
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center; /* Nằm giữa chiều cao so với thẻ cha */
+    justify-content: center; /* Nằm giữa chiều ngang so với thẻ cha */
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    background-color: #fff;
+    position: relative;
+}
+
+.modal-header {
+    font-size: 30px;
+    color: #fff;
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-close {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    opacity: 0.5;
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.modal-content {
+    padding: 16px;
+}
+
+.modal-label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+#modal-buy-tickets {
+    color: #fff;
+    background-color: #009688;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    padding: 18px;
+}
+
+#modal-buy-tickets:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196f3;
 }
