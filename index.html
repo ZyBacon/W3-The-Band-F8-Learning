@@ -134,9 +134,9 @@
                                         Praesent tincidunt sed tellus ut rutrum
                                         sed vitae justo.
                                     </p>
-                                    <a href="#" class="place-buy-btn"
-                                        >Buy Tickets</a
-                                    >
+                                    <button class="place-buy-btn js-buy-ticket">
+                                        Buy Tickets
+                                    </button>
                                 </div>
                             </div>
                             <div class="place-item">
@@ -152,9 +152,9 @@
                                         Praesent tincidunt sed tellus ut rutrum
                                         sed vitae justo.
                                     </p>
-                                    <a href="#" class="place-buy-btn"
-                                        >Buy Tickets</a
-                                    >
+                                    <button class="place-buy-btn js-buy-ticket">
+                                        Buy Tickets
+                                    </button>
                                 </div>
                             </div>
                             <div class="place-item">
@@ -170,9 +170,9 @@
                                         Praesent tincidunt sed tellus ut rutrum
                                         sed vitae justo.
                                     </p>
-                                    <a href="#" class="place-buy-btn"
-                                        >Buy Tickets</a
-                                    >
+                                    <button class="place-buy-btn js-buy-ticket">
+                                        Buy Tickets
+                                    </button>
                                 </div>
                             </div>
                             <div class="clear"></div>
@@ -190,9 +190,9 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal">
-            <div class="modal-container">
-                <div class="modal-close">
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
                     <i class="ti-close"></i>
                 </div>
 
@@ -235,5 +235,40 @@
                 </footer>
             </div>
         </div>
+        <script>
+            const buyBtns = document.querySelectorAll(".js-buy-ticket");
+            const modal = document.querySelector(".js-modal");
+            const modalContainer = document.querySelector(
+                ".js-modal-container"
+            );
+            const modalClose = document.querySelector(".js-modal-close");
+
+            // Hàm hiển thị modal mua vé (thêm class open vào modal)
+            function showBuyTickets() {
+                modal.classList.add("open");
+            }
+
+            // Hàm ẩn modal mua vé (gỡ bỏ class open của modal)
+            function hideBuyTickets() {
+                modal.classList.remove("open");
+            }
+
+            // Lặp qua từng thẻ button và nghe hành vi click
+            for (const buyBtn of buyBtns) {
+                // Nghe hành vi click vào button buy tickets
+                buyBtn.addEventListener("click", showBuyTickets);
+            }
+
+            // Nghe hành vi click vào button close
+            modalClose.addEventListener("click", hideBuyTickets);
+
+            // Nghe hành vi click vào khoảng không bên ngoài modal sẽ tắt modal
+            modal.addEventListener("click", hideBuyTickets);
+
+            // Nghe hành vi click vào để dừng sự kiện nổi bọt
+            modalContainer.addEventListener("click", function (event) {
+                event.stopPropagation();
+            });
+        </script>
     </body>
 </html>

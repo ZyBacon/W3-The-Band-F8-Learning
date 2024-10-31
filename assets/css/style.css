@@ -105,6 +105,7 @@ html {
     line-height: 46px;
 }
 
+/* Slider */
 #slider {
     position: relative; /* Lấy bản thân làm gốc */
     margin-top: 46px;
@@ -131,6 +132,7 @@ html {
     margin-top: 25px;
 }
 
+/* Content section */
 #content {
     /* height: 1000px;
     background-color: #ccc; */
@@ -187,11 +189,11 @@ html {
 }
 
 /* Tour section */
-
 .tour-section {
     background-color: #000;
 }
 
+/* Tickets */
 .tickets-list {
     background-color: #fff;
     margin-top: 40px;
@@ -273,6 +275,7 @@ html {
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
 }
 
 .place-buy-btn:hover {
@@ -281,7 +284,6 @@ html {
 }
 
 /* Footer section */
-
 #footer {
 }
 
@@ -308,6 +310,7 @@ html {
     min-height: 200px;
     background-color: #fff;
     position: relative;
+    animation: modalFadeIn ease 0.4s;
 }
 
 .modal-header {
@@ -377,4 +380,16 @@ html {
 
 .modal-footer a {
     color: #2196f3;
+}
+
+/* Là chuyển động liên tiếp của những hình ảnh tĩnh*/
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
