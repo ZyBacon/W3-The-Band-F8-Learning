@@ -15,12 +15,32 @@ html {
     clear: both;
 }
 
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
 .text-white {
     color: #fff !important;
 }
 
 .text-center {
     text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
 }
 
 .row {
@@ -183,7 +203,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -266,7 +286,6 @@ html {
 /* Places */
 .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-item {
@@ -303,21 +322,6 @@ html {
     line-height: 1.6;
 }
 
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-    border: none;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
 /* Contact form */
 .contact-content {
     margin-top: 48px;
@@ -343,17 +347,37 @@ html {
     width: 100%;
 }
 
-.contact-form .form-submit-btn {
-    font-size: 15px;
-    color: #fff;
-    background-color: #000;
-    border: none;
-    padding: 10px 16px;
-    float: right;
+/* Map section */
+.map-section img {
+    width: 100%;
 }
 
 /* Footer section */
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: #757575;
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    opacity: 0.4;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: #757575;
+}
+
+#footer .copyright a {
+    color: #757575;
 }
 
 /* Modal */
