@@ -1,0 +1,9 @@
+@media (max-width: 740px) {
+    #nav > li {
+        display: block;
+    }
+
+    #header .search-icon {
+        display: none;
+    }
+}
