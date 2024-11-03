@@ -1,6 +1,22 @@
 @media (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
     #nav {
         display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
     }
 
     #nav > li {
@@ -11,11 +27,13 @@
         display: inline-block;
     }
 
-    #header .mobile-menu-btn {
-        display: block;
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
     }
 
-    #header .search-btn {
-        display: none;
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
     }
 }

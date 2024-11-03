@@ -367,8 +367,16 @@
             var menuItems = document.querySelectorAll("#nav li a[href*='#']");
             for (var i = 0; i < menuItems.length; i++) {
                 var menuItem = menuItems[i];
-                menuItem.onclick = function () {
-                    header.style.height = null;
+
+                menuItem.onclick = function (event) {
+                    var isParent =
+                        this.nextElementSibling &&
+                        this.nextElementSibling.classList.contains("subnav");
+                    if (!isParent) {
+                        header.style.height = null;
+                    } else {
+                        event.preventDefault();
+                    }
                 };
             }
         </script>
