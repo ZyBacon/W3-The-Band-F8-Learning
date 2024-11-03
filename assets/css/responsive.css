@@ -1,4 +1,9 @@
+/* Mobile */
 @media (max-width: 740px) {
+    .s-col-full {
+        width: 100%;
+    }
+
     #header {
         overflow: hidden;
     }
@@ -35,5 +40,9 @@
     #nav .subnav a {
         color: #fff;
         padding: 5px 41px;
+    }
+
+    #content .member-img {
+        width: 60%;
     }
 }
