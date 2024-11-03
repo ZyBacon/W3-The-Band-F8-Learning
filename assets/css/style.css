@@ -154,6 +154,13 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
@@ -165,7 +172,7 @@ html {
     background-color: #f44336;
 }
 
-#header .mobile-menu-btn {
+#header .mobile-menu-btn:hover {
     background-color: #ccc;
 }
 
