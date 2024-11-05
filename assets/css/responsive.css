@@ -10,6 +10,7 @@
 
     .contact-form .form-control {
         padding: 15px;
+        font-size: 16px;
     }
 
     /* .socials-list {
@@ -18,6 +19,10 @@
 
     .contact-info {
         line-height: 2;
+    }
+
+    .contact-submit-btn {
+        font-size: 16px;
     }
 
     #footer .socials-list a {
