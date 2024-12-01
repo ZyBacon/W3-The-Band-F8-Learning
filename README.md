@@ -1,14 +1,14 @@
 # W3-The-Band
 
 This repository contains a clone of the [W3Schools Band Template](https://www.w3schools.com/w3css/tryw3css_templates_band.htm). The purpose of this project is to practice and enhance my skills in HTML, CSS, and JavaScript by replicating a real website layout.
-<br> <br>
+
 You can visit W3-The-Band from [here](https://zybacon.github.io/W3-The-Band-F8-Learning/).
 
 ## Project Overview
 
 The project is a static website that aims to recreate the layout, design, and functionality of the "Band" template from W3Schools using HTML, CSS, and JavaScript. This clone project was built from scratch as a practice exercise.
 
-### Technologies Used
+## Technologies Used
 
 -   **HTML**: For the structure of the web pages.
 -   **CSS**: To style the website, focusing on layout, color schemes, and responsiveness.
